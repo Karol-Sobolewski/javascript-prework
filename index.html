@@ -4,16 +4,29 @@
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 <body>
 	<div class="container">
-		<div id="buttons">
-			<button id="play-rock">Kamień</button>
-			<button id="play-paper">Papier</button>
-			<button id="play-scissors">Nożyce</button>
+		<div class="row row-score">
+			<div class="result">
+				<p>Gracz</p><p id="player">0</p>
+			</div>
+			<div class="result">
+				<p>Komputer</p><p id="computer">0</p>
+			</div>
 		</div>
-		<div id="messages"></div>
-	</div>
+		<div id="messages" class="messages">Kliknij przycisk</div>
+	<div class="row row-buttons">
+		<ul class="buttons">
+			<li><button id="play-rock" class="btn"><i class="fas fa-hand-rock"></i></button></li>
+			<li><button id="play-paper" class="btn"><i class="fas fa-hand-paper"></i></button></li>
+			<li><button id="play-scissors" class="btn"><i class="fas fa-hand-scissors"></i></button></li>
+		</ul>
+</div>
+	<div id="messages"></div>
+	<button id="reset-btn" class="btn btn-reset"><i class="fas fa-redo"></i></button>
+</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>

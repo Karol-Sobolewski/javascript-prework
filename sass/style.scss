@@ -1,0 +1,93 @@
+
+/* Global */
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: #ccc;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  padding: 36px 20px;
+  background: #444;
+  text-align: center;
+}
+
+.row {
+  width: 1140px;
+  margin: 48px 0;
+}
+
+/* Score */
+
+.row-score {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result p:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: red;
+    border: 2px solid black;
+  }
+
+.messages {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+ /* Game */
+
+.row-buttons {
+  position: relative;
+  width: 500px;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.buttons {
+  position: relative;
+  justify-content: space-around;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  li {
+    position: relative;
+    padding: 0;
+    font-size: 0px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
